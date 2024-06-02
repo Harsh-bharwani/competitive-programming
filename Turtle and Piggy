@@ -1,0 +1,21 @@
+#include <bits/stdc++.h>
+using namespace std;
+int solve(int x){
+    int ans=x/2;
+    int i=0;
+    while(ans!=0){
+        ans=ans/2;
+        i++;
+    }
+    return i;
+}
+int main()
+{
+    int t;
+cin>>t;
+while(t--){
+int l,r;
+cin>>l>>r;
+cout<<solve(r)<<"\n";
+}
+}
